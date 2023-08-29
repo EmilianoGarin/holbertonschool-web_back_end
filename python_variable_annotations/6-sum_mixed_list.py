@@ -5,7 +5,7 @@ from typing import List
 
 def sum_mixed_list(a: List[int, float]) -> float:
     """Takes a list of floats and int and returns their sum as a float"""
-    ret = 0
+    ret: float = 0
     for v in a:
         ret += v
     return ret
