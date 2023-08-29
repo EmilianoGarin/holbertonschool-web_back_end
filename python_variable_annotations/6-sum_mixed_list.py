@@ -3,6 +3,7 @@
 integers and floats and returns their sum as a float."""
 from typing import List, Union
 
+
 def sum_mixed_list(a: List[Union[int, float]]) -> float:
     """Takes a list of floats and int and returns their sum as a float"""
     ret: float = 0
