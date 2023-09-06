@@ -1,2 +1,2 @@
 // find all document with name="Holberton school" in my_db.school and list them
-db.school.find({"naem": "Holberton school"})
+db.school.find({"name": "Holberton school"})
