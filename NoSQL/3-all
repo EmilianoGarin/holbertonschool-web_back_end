@@ -1,0 +1,2 @@
+// find all document in my_db.school and list them
+db.school.find()
