@@ -6,7 +6,7 @@ if __name__ == "__main__":
     client = MongoClient('mongodb://127.0.0.1:27017')
     collection = client.logs.nginx
 
-    total = collection.count_documents()
+    total = collection.count_documents({})
 
     method_counts = {"GET": 0, "POST": 0, "PUT": 0, "PATCH": 0, "DELETE": 0}
     for k in method_counts.keys():
