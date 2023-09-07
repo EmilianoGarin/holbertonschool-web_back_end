@@ -27,6 +27,7 @@ class Server:
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """ get page
         """
+        assert isinstance(page, int) and isinstance(page_size, int)
         assert page > 0 and page_size > 0
 
         indexs = index_range(page, page_size)
