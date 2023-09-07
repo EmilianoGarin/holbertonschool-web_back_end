@@ -35,8 +35,8 @@ class Server:
         end = indexs[1]
         return self.dataset()[start:end]
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[dict]:
-        """ get hyper
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
+        """ get hyper returna dict
         """
         page_data = self.get_page(page, page_size)
         total_pages = math.ceil(len(self.dataset()) / page_size)
